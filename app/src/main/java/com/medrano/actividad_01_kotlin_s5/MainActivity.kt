@@ -67,6 +67,18 @@ fun RegistroRapido() {
             placeholder = { Text("ejemplo123@gmail.com")},
             modifier = Modifier.fillMaxWidth()
         )
+        Spacer(modifier = Modifier.height(8.dp))
+
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier.fillMaxWidth()
+        ){
+            Text(" 🗒️ Subscribirme al boletín",
+                modifier = Modifier.weight(1f))
+            Switch(checked = subscrito,
+                onCheckedChange = { subscrito = it})
+        }
+
     }
 }
 
