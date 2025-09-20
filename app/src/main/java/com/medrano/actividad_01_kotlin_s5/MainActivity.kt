@@ -92,6 +92,17 @@ fun RegistroRapido() {
             Text("Registrar")
         }
 
+        Spacer(Modifier.height(16.dp))
+
+        Text(
+            text = "RESULTADO: \n$resultado",
+            modifier = Modifier
+                .fillMaxWidth()
+                .background(Color(0xFFEDE7F6))
+                .border(2.dp, Color(0xFF6200EA))
+                .padding(8.dp)
+        )
+
 
     }
 }
