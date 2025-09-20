@@ -30,6 +30,10 @@ import androidx.compose.ui.unit.dp
 import com.medrano.actividad_01_kotlin_s5.ui.theme.Actividad_01_Kotlin_S5Theme
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
