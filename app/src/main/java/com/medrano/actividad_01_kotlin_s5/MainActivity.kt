@@ -36,7 +36,27 @@ fun RegistroRapido() {
     var correo by remember { mutableStateOf("") }
     var subscrito by remember { mutableStateOf(false) }
     var resultado by remember { mutableStateOf("") }
-    
+
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(16.dp)
+    ){
+        Text("Registro Rápido",
+            style = MaterialTheme.typography.headlineMedium
+        )
+        
+        Spacer(modifier = Modifier.height(16.dp))
+
+        Text(text = "NOMBRE")
+        Spacer(modifier = Modifier.height(5.dp))
+        TextField(
+            value = nombre,
+            onValueChange = { nombre = it},
+            placeholder = { Text("Ingresa tu nombre")},
+            modifier = Modifier.fillMaxWidth()
+        )
+    }
 }
 
 @Preview(showBackground = true)
