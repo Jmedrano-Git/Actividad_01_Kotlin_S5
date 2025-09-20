@@ -62,8 +62,12 @@ fun RegistroRapido() {
             .padding(16.dp),
         verticalArrangement = Arrangement.Center
     ){
-        Text("Registro Rápido",
-            style = MaterialTheme.typography.headlineMedium
+        Text("📕 Registro Rápido",
+            style = MaterialTheme.typography.headlineMedium,
+            color = Color(0xFF6200EA),
+            modifier = Modifier.fillMaxWidth(),
+            textAlign = TextAlign.Center,
+            fontWeight = FontWeight.Bold
         )
         
         Spacer(modifier = Modifier.height(16.dp))
