@@ -56,6 +56,17 @@ fun RegistroRapido() {
             placeholder = { Text("Ingresa tu nombre")},
             modifier = Modifier.fillMaxWidth()
         )
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        Text(text = "CORREO")
+        Spacer(modifier = Modifier.height(5.dp))
+        TextField(
+            value = correo,
+            onValueChange = {correo = it},
+            placeholder = { Text("ejemplo123@gmail.com")},
+            modifier = Modifier.fillMaxWidth()
+        )
     }
 }
 
