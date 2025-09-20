@@ -31,24 +31,12 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun registroRapido() {
-    Column (
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(20.dp),
-        verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally
-    ){
-        Text(
-            "Registro Rápido",
-
-        )
-
-        Spacer(modifier = Modifier.height(16.dp))
-
-
-
-    }
+fun RegistroRapido() {
+    var nombre by remember { mutableStateOf("") }
+    var correo by remember { mutableStateOf("") }
+    var subscrito by remember { mutableStateOf(false) }
+    var resultado by remember { mutableStateOf("") }
+    
 }
 
 @Preview(showBackground = true)
