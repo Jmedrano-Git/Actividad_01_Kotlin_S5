@@ -59,7 +59,8 @@ fun RegistroRapido() {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .padding(16.dp)
+            .padding(16.dp),
+        verticalArrangement = Arrangement.Center
     ){
         Text("Registro Rápido",
             style = MaterialTheme.typography.headlineMedium
