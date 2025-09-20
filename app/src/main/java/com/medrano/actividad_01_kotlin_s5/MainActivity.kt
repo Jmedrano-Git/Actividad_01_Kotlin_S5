@@ -134,5 +134,5 @@ fun RegistroRapido() {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    registroRapido()
+    RegistroRapido()
 }
