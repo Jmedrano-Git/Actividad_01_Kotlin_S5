@@ -42,6 +42,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
+            Actividad_01_Kotlin_S5Theme {
+                RegistroRapido()
+            }
         }
     }
 }
