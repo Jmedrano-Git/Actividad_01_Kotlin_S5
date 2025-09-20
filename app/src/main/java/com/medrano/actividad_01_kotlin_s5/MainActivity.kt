@@ -79,6 +79,20 @@ fun RegistroRapido() {
                 onCheckedChange = { subscrito = it})
         }
 
+        Spacer(modifier = Modifier.height(16.dp))
+
+        Button(
+            onClick = {
+                resultado = "Nombre: $nombre\nCorreo: $correo\nSubscrito: ${if (subscrito) "Sí" else "No"}"
+            },
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(vertical = 8.dp)
+        ) {
+            Text("Registrar")
+        }
+
+
     }
 }
 
